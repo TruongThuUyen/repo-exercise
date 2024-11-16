@@ -1,0 +1,38 @@
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+    .logo-wrapper {
+        grid-column: 3 / span 2;
+        height: fit-content;
+        .lemon-logo {
+            width: 200px;
+            height: auto;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.menu {
+    grid-column: 6 / span 6;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    .menu-item {
+        text-align: center;
+        > a {
+            padding: 12px 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: #fafafa;
+        }
+    }
+}

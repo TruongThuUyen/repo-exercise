@@ -1,0 +1,49 @@
+.hero-section {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #495e57;
+    position: relative;
+}
+
+.left-section {
+    grid-column: 3 / span 3;
+    .left-section__title {
+        font-size: 2.6rem;
+        color: #c3a510;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+    .left-section__sub-title {
+        font-size: 1.8rem;
+        color: #fff;
+        margin-bottom: 18px;
+        line-height: 1;
+    }
+    .left-section__introduction {
+        color: #fff;
+        line-height: 1.2;
+    }
+    .btn-reserve {
+        padding: 8px 16px;
+        margin-top: 14px;
+        border-radius: 20px;
+        background-color: #f4ce14;
+    }
+}
+
+.hero-section .right-section {
+    grid-column: 8 / span 4;
+    position: absolute;
+    top: 10%;
+
+    > img {
+        width: 300px;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
